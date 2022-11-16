@@ -1,5 +1,6 @@
 export interface Ice {
-    quantity: string;
+    quantity: number;
+    cant: string;
     price: number;
     stock: number;
     image: string;

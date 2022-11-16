@@ -2,17 +2,27 @@
     <thead>
         <tr>
             <th>Image</th>
-            <th>Quantity</th>
+            <th>cant</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Compra</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let ice of ices" [ngClass]="{'supply' : ice.supply}">
-            <td><img class="rounded" [src]="ice.image" [alt]="ice.quantity"></td>
-            <td>{{ice.quantity}}</td>
+            <td><img class="rounded" [src]="ice.image" [alt]="ice.cant"></td>
+            <td>{{ice.cant}}</td>
             <td>{{ice.price | currency}}</td>
             <td ><span *ngIf="ice.stock == 0" class="badge text-bg-warning">Sin Stock</span></td>
+            <td>
+                <button class="btn btn-primary btn-small" (click)="downQuantity(ice)" >-</button>
+                <input
+                type="text"
+                [(ngModel)]="ice.quantity"
+                (keyup)="ChangeQuantity($event, ice)">
+                <button class="btn btn-primary btn-small" (click)="upQuantity(ice)">+</button>
+                {{ice.quantity}}
+            </td>
         </tr>
     </tbody>
 </table>
