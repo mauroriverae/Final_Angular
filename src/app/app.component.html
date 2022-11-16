@@ -1,25 +1,24 @@
 <nav class="navbar navbar-expand-lg bg-dark ">
   <div class="container-fluid ">
-    <a class="navbar-brand text-white " href="#">Home</a>
+    <a class="navbar-brand text-white " [routerLink]="['/']">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active text-white " aria-current="page" href="#">Ice Cream</a>
-        <a class="nav-link text-white " href="#">Coffe</a>
-        <a class="nav-link text-white " href="#">About</a>
+        <a class="nav-link text-white" [routerLink]="['/coffeshop']" >coffe shop</a>
+        <a class="nav-link text-white " [routerLink]="['/contact']">About</a>
       </div>
     </div>
   </div>
 </nav>
+
+
 <div class="container">
-  <div class="col-8">
-    <app-ice-cream-list></app-ice-cream-list>
-  </div>
-  <div class="col-4"></div>
+    <router-outlet></router-outlet>
 </div>
 
-<footer class="d-flex justify-content-center">
+
+<footer class="d-flex justify-content-center  ">
   <p>&copy;{{title}}</p>
 </footer>

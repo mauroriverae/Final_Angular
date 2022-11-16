@@ -6,11 +6,19 @@ import { AppComponent } from './app.component';
 import { IceCreamListComponent } from './ice-cream-list/ice-cream-list.component';
 
 import { FormsModule } from '@angular/forms';
+import { PistachoContactComponent } from './pistacho-contact/pistacho-contact.component';
+import { PistachoIcecreamComponent } from './pistacho-icecream/pistacho-icecream.component';
+import { PistachocartComponent } from './pistachocart/pistachocart.component';
+import { CoffeListComponent } from './coffe-list/coffe-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IceCreamListComponent
+    IceCreamListComponent,
+    PistachoContactComponent,
+    PistachoIcecreamComponent,
+    PistachocartComponent,
+    CoffeListComponent
   ],
   imports: [
     BrowserModule,
