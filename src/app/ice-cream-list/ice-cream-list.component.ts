@@ -28,7 +28,7 @@ export class IceCreamListComponent implements OnInit {
     {
       "cant" : "1kg",
       "price" : 2000,
-      "stock" :  5,
+      "stock" :  5  ,
       "image" : "assets/img/ice.jpg",
       "supply" : false,
       "quantity": 0,
@@ -40,17 +40,8 @@ export class IceCreamListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  upQuantity(ice : Ice): void {
-    if(ice.quantity < ice.stock)
-      ice.quantity++;
-  }
-  downQuantity(ice : Ice): void {
-    if(ice.quantity > 0) 
-      	ice.quantity--;
-  }
-
-  ChangeQuantity(event: any , ice:Ice): void {
-    console.log(event);
+  maxReached(m : string){
+    alert(m);
   }
 
 }

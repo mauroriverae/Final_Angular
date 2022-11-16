@@ -15,8 +15,8 @@ const routes: Routes = [
     component: PistachoIcecreamComponent
   },
   {
-    path: 'creams',
-    component: PistachoIcecreamComponent
+    path: 'contact',
+    component: PistachoContactComponent
   },
   {
     path: 'coffeshop',

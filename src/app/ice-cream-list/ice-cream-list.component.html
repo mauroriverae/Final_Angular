@@ -15,13 +15,8 @@
             <td>{{ice.price | currency}}</td>
             <td ><span *ngIf="ice.stock == 0" class="badge text-bg-warning">Sin Stock</span></td>
             <td>
-                <button class="btn btn-primary btn-small" (click)="downQuantity(ice)" >-</button>
-                <input
-                type="text"
-                [(ngModel)]="ice.quantity"
-                (keyup)="ChangeQuantity($event, ice)">
-                <button class="btn btn-primary btn-small" (click)="upQuantity(ice)">+</button>
-                {{ice.quantity}}
+              <app-input-int [(quantity)]="ice.quantity" [max]="ice.stock" *ngIf="ice.stock" (maxReached)="maxReached($event)"></app-input-int>
+              Cant: {{ice.quantity}}
             </td>
         </tr>
     </tbody>

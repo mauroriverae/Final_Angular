@@ -10,6 +10,7 @@ import { PistachoContactComponent } from './pistacho-contact/pistacho-contact.co
 import { PistachoIcecreamComponent } from './pistacho-icecream/pistacho-icecream.component';
 import { PistachocartComponent } from './pistachocart/pistachocart.component';
 import { CoffeListComponent } from './coffe-list/coffe-list.component';
+import { InputIntComponent } from './input-int/input-int.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CoffeListComponent } from './coffe-list/coffe-list.component';
     PistachoContactComponent,
     PistachoIcecreamComponent,
     PistachocartComponent,
-    CoffeListComponent
+    CoffeListComponent,
+    InputIntComponent
   ],
   imports: [
     BrowserModule,
