@@ -1,9 +1,17 @@
 *{font-weight: bold; background: #fafafa;}
-img{width: 150px;height: 150px;}
+img{}
 
 .supply {
-    border: 2px solid green;
-    background: lightcyan
+    border: 1px solid green;
+    background: lightgreen;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    border-radius: 20px;
 }
 td{ vertical-align: middle;}
 
+img{
+    border-radius: 15px;
+    border:1px solid black;
+    width: 150px;height: 150px;
+}

@@ -9,10 +9,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let ice of ices" [ngClass]="{'supply' : ice.supply}">
+        <tr *ngFor="let ice of ices">
             <td><img class="rounded" [src]="ice.image" [alt]="ice.cant"></td>
             <td>{{ice.cant}}</td>
-            <td>{{ice.price | currency}}</td>
+            <td >
+                <span [ngClass]="{'supply' : ice.supply}">{{ice.price | currency}}</span>
+            </td>
             <td ><span *ngIf="ice.stock == 0" class="badge text-bg-warning">Sin Stock</span></td>
             <td>
               <app-input-int [(quantity)]="ice.quantity" [max]="ice.stock" *ngIf="ice.stock" (maxReached)="maxReached($event)"></app-input-int>
