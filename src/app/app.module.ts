@@ -11,6 +11,7 @@ import { PistachoIcecreamComponent } from './pistacho-icecream/pistacho-icecream
 import { PistachocartComponent } from './pistachocart/pistachocart.component';
 import { CoffeListComponent } from './coffe-list/coffe-list.component';
 import { InputIntComponent } from './input-int/input-int.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InputIntComponent } from './input-int/input-int.component';
     PistachoIcecreamComponent,
     PistachocartComponent,
     CoffeListComponent,
-    InputIntComponent
+    InputIntComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

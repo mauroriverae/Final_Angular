@@ -1,0 +1,13 @@
+.container_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10rem;
+}
+.buy{
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 68vh;
+    margin: 20px;
+}
+
