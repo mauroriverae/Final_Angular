@@ -18,8 +18,12 @@
             <td ><span *ngIf="ice.stock == 0" class="badge text-bg-warning">Sin Stock</span></td>
             <td>
               <app-input-int [(quantity)]="ice.quantity" [max]="ice.stock" *ngIf="ice.stock" (maxReached)="maxReached($event)"></app-input-int>
-              Cant: {{ice.quantity}}
             </td>
+            <td>
+                <button class="btn btn-primary" (click)="addTocart(ice)">Buy</button>
+            </td>
+
+
         </tr>
     </tbody>
 </table>
