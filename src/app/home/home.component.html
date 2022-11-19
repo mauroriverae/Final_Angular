@@ -1,38 +1,17 @@
 <main>
-    <section>
-        <div class="title">
-            <img src="..." alt="">
-            <h1>Bienvenidos</h1>          
-        </div>
-    </section>
+  <section>
+      <h1>Bienvenidos</h1>
+      <p>Realiza tu pedido Online o encargalo para retirarlo</p>
+  </section>
+  <section class="container_cards">
 
-    <div class="buy">
-        <h2>Realiza tu pedido</h2>
-        <div class="container_cards">
-            <div class="card" style="width: 18rem;">
-                <a [routerLink]="['/creams']"><img class="card-img-top" src="..." alt="Card image cap"></a>
-                <div class="card-body">
-                  <p class="card-text">1/4kg</p>
-                </div>
-            </div>
-        
-            <div class="card">
-                <div class="card" style="width: 18rem;">
-                    <a [routerLink]="['/creams']"><img class="card-img-top" src="..." alt="Card image cap"></a>
-                    <div class="card-body">
-                        <p class="card-text">1/2</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card" style="width: 18rem;">
-                    <a [routerLink]="['/creams']"><img class="card-img-top" src="..." alt="Card image cap"></a>
-                    <div class="card-body">
-                        <p class="card-text">1kg</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="card" style="width: 18rem;" *ngFor="let q of quant"> 
+      <img src="assets/img/descarga.jpg" class="card-img-top" alt="1/4kg">
+      <h3>{{q.quantity}}</h3>
+      <div class="card-body">
+        <p class="card-text">{{q.price | currency}}</p>
+      </div>
     </div>
+
+  </section>
 </main>
