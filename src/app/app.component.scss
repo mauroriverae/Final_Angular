@@ -5,5 +5,11 @@
 footer{
     background:black;
     color: white;
-    height: 3em;
+    height: 2.5em;
+    padding: 0 10px;
+    align-items: center;
+}
+
+footer img:hover{
+    box-shadow: 1px 1px 5px red;
 }
