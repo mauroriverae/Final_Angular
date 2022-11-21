@@ -1,28 +1,37 @@
-<nav class="navbar navbar-expand-lg bg-dark ">
-  <div class="container-fluid ">
-    <a class="navbar-brand text-white " [routerLink]="['/']">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link text-white" [routerLink]="['/creams']" >Creams</a>
-        <a class="nav-link text-white" [routerLink]="['/coffeshop']" >coffe shop</a>
-        <a class="nav-link text-white " [routerLink]="['/contact']">About</a>
+<div class="container-gird">
+  <nav class="navbar navbar-expand-lg bg-dark ">
+    <div class="container-fluid ">
+      <a class="navbar-brand text-white " [routerLink]="['/']">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link text-white" [routerLink]="['/creams']" >Creams</a>
+          <a class="nav-link text-white" [routerLink]="['/coffeshop']" >coffe shop</a>
+          <a class="nav-link text-white " [routerLink]="['/contact']">About</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<main class="central">
+  </nav>
 
-  <div class="container">
-    <router-outlet></router-outlet> 
-  </div>
 
-</main>
-<footer class="d-flex justify-content-between">
-  <p>&copy;{{title}}</p>
-  <div>
-    <a href="https://www.instagram.com/pistachocremasheladas/" target="_blank" ><img width="20px" height="20px" src="assets/img/igico.png" alt="logoIg"></a>
-  </div>
-</footer>
+  <main class="central">
+
+    <div class="container">
+      <router-outlet></router-outlet> 
+    </div>
+
+  </main>
+
+
+
+
+
+  <footer class="d-flex justify-content-between">
+    <p>&copy;{{title}}</p>
+    <div>
+      <a href="https://www.instagram.com/pistachocremasheladas/" target="_blank" ><img width="20px" height="20px" src="assets/img/igico.png" alt="logoIg"></a>
+    </div>
+  </footer>
+</div>
