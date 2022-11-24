@@ -1,5 +1,16 @@
-<p>Welcom to the coffeshop men </p>
-<p>Welcom to the coffeshop men </p>
-<p>Welcom to the coffeshop men </p>
-<p>Welcom to the coffeshop men </p>
-<p>Welcom to the coffeshop men </p>
+<section class="info">
+    <h2>Como es nuestro servicio y que cafe utilizamos?</h2>
+    <p>Utilizamos cafe Cabrales de primera calidad, cada cafe contiene una vaso de soda mas una de gustacion de nuestros sabores de especialidad</p>
+</section>
+<section class="container_cards">
+
+    <div class="card" style="width: 18rem;" *ngFor="let c of coffe"> 
+      <img [src]="c.image" class="card-img-top" alt="1/4kg">
+      <h3>{{c.name}}</h3>
+      <div class="card-body">
+        <p class="card-text">{{c.price | currency}}</p>
+      </div>
+    </div>
+
+  </section>
+

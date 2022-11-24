@@ -6,7 +6,7 @@
   <section class="container_cards">
 
     <div class="card" style="width: 18rem;" *ngFor="let q of quant"> 
-      <img src="assets/img/descarga.jpg" class="card-img-top" alt="1/4kg">
+      <img [src]="q.image" class="card-img-top" alt="1/4kg">
       <h3>{{q.quantity}}</h3>
       <div class="card-body">
         <p class="card-text">{{q.price | currency}}</p>

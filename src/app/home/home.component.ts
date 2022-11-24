@@ -10,15 +10,18 @@ export class HomeComponent {
   quant : Quant[] = [
     {
       "quantity" : "1/4kg",
-      "price" : 600
+      "price" : 600,
+      "image" :"assets/img/h1.jpg",
     },
     {
       "quantity" : "1/2kg",
-      "price" : 1100
+      "price" : 1100,
+      "image" :"assets/img/1-2kg2.jpg",
     },
     {
       "quantity" : "1kg",
-      "price" : 2000
+      "price" : 2000,
+      "image" :"assets/img/h3.jpg",
     },
   ]
 }
