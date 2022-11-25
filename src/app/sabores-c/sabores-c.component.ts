@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class SaboresCComponent {
 
   saboresList() :void{
-    alert("Entre");
+    let sabores = ["Chocolates", "Dulce de leche", "Americana"]
+    for( let sabor of sabores){
+      alert(`<li>${sabor}</li>`);
+    }
   }
 }
