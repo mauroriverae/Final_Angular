@@ -2,10 +2,12 @@
     <thead>
         <tr>
             <th>Image</th>
-            <th>cant</th>
+            <th>Termico</th>
             <th>Precio</th>
             <th>Stock</th>
-            <th>Compra</th>
+            <th>Unidades</th>
+            <th>Sabores</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -20,10 +22,11 @@
               <app-input-int [(quantity)]="ice.quantity" [max]="ice.stock" *ngIf="ice.stock" (maxReached)="maxReached($event)"></app-input-int>
             </td>
             <td>
+                <app-sabores-c></app-sabores-c>
+            </td>
+            <td>
                 <button class="btn btn-primary" (click)="addTocart(ice)">Buy</button>
             </td>
-
-
         </tr>
     </tbody>
 </table>

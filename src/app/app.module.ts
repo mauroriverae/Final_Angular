@@ -12,6 +12,7 @@ import { PistachocartComponent } from './pistachocart/pistachocart.component';
 import { CoffeListComponent } from './coffe-list/coffe-list.component';
 import { InputIntComponent } from './input-int/input-int.component';
 import { HomeComponent } from './home/home.component';
+import { SaboresCComponent } from './sabores-c/sabores-c.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
     PistachocartComponent,
     CoffeListComponent,
     InputIntComponent,
-    HomeComponent
+    HomeComponent,
+    SaboresCComponent
   ],
   imports: [
     BrowserModule,
