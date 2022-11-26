@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class SaboresCComponent {
 
   saboresList() :void{
-    let sabores = ["Chocolates", "Dulce de leche", "Americana"]
+    let sabores = ["Chocolates", "Dulce de leche", "Americana", "Cereza", "Chocolate Italiano ",]
     for( let sabor of sabores){
-      alert(`<li>${sabor}</li>`);
+      console.log(`<li>${sabor}</li>`);
     }
   }
 }
