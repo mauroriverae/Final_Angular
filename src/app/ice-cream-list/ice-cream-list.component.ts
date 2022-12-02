@@ -2,47 +2,45 @@ import { Component, OnInit } from '@angular/core';
 import { CreamCartService } from '../cream-cart.service';
 import { Ice } from './Ice';
 
-
 @Component({
   selector: 'app-ice-cream-list',
   templateUrl: './ice-cream-list.component.html',
-  styleUrls: ['./ice-cream-list.component.scss']
+  styleUrls: ['./ice-cream-list.component.scss'],
 })
 export class IceCreamListComponent implements OnInit {
-  ices : Ice[] = [
+  ices: Ice[] = [
     {
-      "cant" : "1/4kg",
-      "price" : 600,
-      "stock" :  0,
-      "image" : "assets/img/ice.jpg",
-      "supply" : false,
-      "quantity": 0,
+      cant: '1/4kg',
+      price: 600,
+      stock: 0,
+      image:
+        'https://raw.githubusercontent.com/mauroriverae/Final_Angular/main/src/assets/img/ice.jpg',
+      supply: false,
+      quantity: 0,
     },
     {
-      "cant" : "1/2 kg",
-      "price" : 1100,
-      "stock" :  5,
-      "image" : "assets/img/ice.jpg",
-      "supply" : true,
-      "quantity": 0,
+      cant: '1/2 kg',
+      price: 1100,
+      stock: 5,
+      image:
+        'https://raw.githubusercontent.com/mauroriverae/Final_Angular/main/src/assets/img/ice.jpg',
+      supply: true,
+      quantity: 0,
     },
     {
-      "cant" : "1kg",
-      "price" : 2000,
-      "stock" :  5  ,
-      "image" : "assets/img/ice.jpg",
-      "supply" : false,
-      "quantity": 0,
-    }
+      cant: '1kg',
+      price: 2000,
+      stock: 5,
+      image:
+        'https://raw.githubusercontent.com/mauroriverae/Final_Angular/main/src/assets/img/ice.jpg',
+      supply: false,
+      quantity: 0,
+    },
   ];
-  
 
-  constructor( private cart : CreamCartService) { 
-    
-  }
+  constructor(private cart: CreamCartService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   addTocart(ice: Ice): void {
     this.cart.addTocart(ice);
@@ -50,8 +48,7 @@ export class IceCreamListComponent implements OnInit {
     ice.quantity = 0;
   }
 
-  maxReached(m : string) {
+  maxReached(m: string) {
     alert(m);
   }
-
 }
